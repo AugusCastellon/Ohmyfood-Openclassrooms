@@ -1,29 +1,182 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ohmyfood</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <!--StylesSheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Document</title>
   </head>
   <body>
-    <h1>hello world</h1>
+    <header>
+      <img class="logo" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
+    </header>
+
+    <div class="location">
+      <label for="location__search"
+        ><i class="fa-solid fa-location-dot location__icon"></i
+      ></label>
+      <input
+        type="search"
+        class="location__search"
+        id="location__search"
+        value="Paris, Belleville"
+        placeholder="Renseignez la ville ..."
+      />
+    </div>
+    <div class="explore">
+      <h2 class="explore__title">Book the menue you like</h2>
+      <p class="explore__txt">
+        Discover top-of-the-art restaurants we piked for you
+      </p>
+      <button class="explore__btn explore__btn--primary-gradient">
+        Explore our restaurants
+      </button>
+    </div>
+
+    <main>
+      <section class="fonct-section">
+        <div class="fonct-section__sizing">
+          <h2>How it works</h2>
+          <div class="fonct-section__layout">
+            <div class="fonct-step">
+              <span class="fonct-step__num">1</span>
+              <i class="fa-solid fa-mobile-screen-button fonct-step__icon"></i
+              ><span class="fonct-step__txt">Chose a restaurant</span>
+            </div>
+            <div class="fonct-step">
+              <span class="fonct-step__num">2</span>
+              <i class="fa-solid fa-list-ul fonct-step__icon"></i
+              ><span class="fonct-step__txt">Create your menu</span>
+            </div>
+            <div class="fonct-step">
+              <span class="fonct-step__num">3</span>
+              <i class="fa-solid fa-store fonct-step__icon"></i
+              ><span class="fonct-step__txt"
+                >Go enjoy it at the restaurant</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rest-section">
+        <div class="rest-section__sizing">
+          <h2>Restaurants</h2>
+          <div class="rest-section__layout">
+            <a href="The Full palette-page">
+              <div class="rest-card">
+                <div class="rest-card__img">
+                  <img
+                    sizes="100vw"
+                    src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="Picture 'The Full palette'"
+                  /><span class="rest-card__img__new">New</span>
+                </div>
+                <div class="rest-card__bottom">
+                  <div class="rest-card__txt">
+                    <h3>The Full palette</h3>
+                    <span>New York</span>
+                  </div>
+                  <div class="rest-card__heart-section">
+                    <i class="fa-regular fa-heart rest-card__outer-heart"></i>
+                    <i class="fa-solid fa-heart rest-card__inner-heart"></i>
+                  </div>
+                </div>
+              </div> </a
+            ><a href="The Enchanted Plate -page">
+              <div class="rest-card">
+                <div class="rest-card__img">
+                  <img
+                    sizes="100vw"
+                    src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    alt="Picture 'The Enchanted Plate'"
+                  /><span class="rest-card__img__new">New</span>
+                </div>
+                <div class="rest-card__bottom">
+                  <div class="rest-card__txt">
+                    <h3>The Enchanted Plate</h3>
+                    <span>New York</span>
+                  </div>
+                  <div class="rest-card__heart-section">
+                    <i class="fa-regular fa-heart rest-card__outer-heart"></i>
+                    <i class="fa-solid fa-heart rest-card__inner-heart"></i>
+                  </div>
+                </div>
+              </div> </a
+            ><a href="Bastille -page">
+              <div class="rest-card">
+                <div class="rest-card__img">
+                  <img
+                    sizes="100vw"
+                    src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="Picture'Bastille'"
+                  />
+                </div>
+                <div class="rest-card__bottom">
+                  <div class="rest-card__txt">
+                    <h3>Bastille</h3>
+                    <span>New York</span>
+                  </div>
+                  <div class="rest-card__heart-section">
+                    <i class="fa-regular fa-heart rest-card__outer-heart"></i>
+                    <i class="fa-solid fa-heart rest-card__inner-heart"></i>
+                  </div>
+                </div>
+              </div> </a
+            ><a href="Le Gourmand -page">
+              <div class="rest-card">
+                <div class="rest-card__img">
+                  <img
+                    sizes="100vw"
+                    src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="Picture 'Le Gourmand'"
+                  />
+                </div>
+                <div class="rest-card__bottom">
+                  <div class="rest-card__txt">
+                    <h3>Le Gourmand</h3>
+                    <span>New York</span>
+                  </div>
+                  <div class="rest-card__heart-section">
+                    <i class="fa-regular fa-heart rest-card__outer-heart"></i>
+                    <i class="fa-solid fa-heart rest-card__inner-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-layout">
+        <p>ohmyfood</p>
+        <nav class="nav">
+          <ul>
+            <li class="nav__link">
+              <i class="fa-solid fa-utensils nav__icon"></i
+              ><a href="#">Suggest a restautrant</a>
+            </li>
+            <li class="nav__link">
+              <i class="fa-solid fa-handshake-angle nav__icon"></i
+              ><a href="#">Become a partner</a>
+            </li>
+            <li class="nav__link"><a href="#">Legal</a></li>
+            <li class="nav__link"><a href="mailto:#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>hello</h1>
-  </body>
-</html>
->>>>>>> ae357c816e0612b328685fdb2382b2de5c81379d
