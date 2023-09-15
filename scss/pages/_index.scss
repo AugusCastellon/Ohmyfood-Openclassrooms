@@ -1,0 +1,110 @@
+body {
+    font-family: Roboto, sans-serif;
+    position: relative;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  
+  img {
+    width: 200px;
+    margin: 1.5rem auto 1rem;
+  }
+  
+  .return-arrow {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  
+  footer {
+    background-color: rgb(50, 50, 50);
+    color: white;
+  }
+  
+  .footer-layout {
+    padding: 1.5rem 1.5rem;
+    max-width: 1500px;
+    margin: auto;
+  }
+  .footer-layout p {
+    font-family: Shrikhand, cursive;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  
+  .nav__link {
+    margin: 0.5rem 0;
+  }
+  .nav__icon {
+    margin-right: 1rem;
+  }
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .explore__btn {
+    border: none;
+    border-radius: 4rem;
+    color: white;
+    -webkit-box-shadow: 0 2px 8px lightgrey;
+            box-shadow: 0 2px 8px lightgrey;
+    padding: 0.8rem 1rem;
+  }
+  .explore__btn--primary-gradient {
+    background: linear-gradient(175deg, #FF79DA, #9356DC);
+  }
+  .explore__btn:hover {
+    background: linear-gradient(175deg, #ff93e1, #a16be0);
+    -webkit-box-shadow: 0 4px 8px rgb(170, 170, 170);
+            box-shadow: 0 4px 8px rgb(170, 170, 170);
+  }
+  
+  .order-btn {
+    border: none;
+    border-radius: 4rem;
+    color: white;
+    -webkit-box-shadow: 0 2px 8px lightgrey;
+            box-shadow: 0 2px 8px lightgrey;
+    padding: 0.8rem 3rem;
+    display: block;
+    margin: auto;
+  }
+  .order-btn--primary-gradient {
+    background: linear-gradient(175deg, #FF79DA, #9356DC);
+  }
+  .order-btn:hover {
+    background: linear-gradient(175deg, #ff93e1, #a16be0);
+    -webkit-box-shadow: 0 4px 8px rgb(170, 170, 170);
+            box-shadow: 0 4px 8px rgb(170, 170, 170);
+  }
+  

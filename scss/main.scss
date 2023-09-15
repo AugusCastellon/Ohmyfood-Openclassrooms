@@ -1,7 +1,14 @@
-body{
-    background-color: green;
-}
+@import "./base/breakpoints";
+@import "./base/mixin";
+@import "./base/normalize";
+@import "./base/variables";
 
-h1 {
-    color:red;
-}
+@import "./components/buttons";
+@import "./components/loader-animation";
+@import "./components/menu-animation";
+
+@import "./layouts/footer";
+@import "./layouts/header";
+
+@import "./pages/index";
+@import "./pages/menus";
