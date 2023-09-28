@@ -7,9 +7,10 @@
     margin-bottom: 5%;
     padding: 0.8rem 1rem;
     background: linear-gradient(175deg,$secondary-color,$primary-color);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+
     &:hover {
         background: linear-gradient(175deg,$secondary-color 30%,$primary-color);
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     }
 }
-
