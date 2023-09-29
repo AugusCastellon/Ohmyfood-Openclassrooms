@@ -161,7 +161,7 @@ img {
   color: white;
   font-size: 0.8rem;
   border-radius: 50%;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.6rem;
   position: absolute;
   left: -12px;
   top: 20px;
@@ -181,25 +181,6 @@ img {
   color: #9356DC;
 }
 
-style attribute {
-  height: auto;
-  cursor: grab;
-  transition-duration: 0ms;
-  transform: translate3d(0px, 0px, 0px);
-}
-
-.rest-card__heart-animation__heart-full, .rest-card__heart-animation__heart-empty {
-  font-size: 40px;
-  position: relative;
-}
-.rest-card__heart-animation__heart-animation:hover .rest-card__heart-animation__heart-full {
-  opacity: 1;
-}
-.rest-card__heart-animation__heart-full {
-  opacity: 0;
-  transition: all 3s ease-in-out;
-}
-
 .rest-section {
   padding: 3rem 1.5rem;
   width: 100%;
@@ -215,38 +196,38 @@ style attribute {
 
 .rest-card {
   background-color: white;
+  margin: 0 auto;
   border-radius: 1rem;
-  margin-bottom: 1rem;
-  overflow: hidden;
 }
 .rest-card__img {
-  height: 170px;
+  aspect-ratio: 2/1;
   position: relative;
-  overflow: hidden;
 }
 .rest-card__img img {
-  width: 110%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
 }
 .rest-card__img__new {
   background-color: #99E2D0;
   color: #278870;
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 0.5rem;
+  border-radius: 0.1rem;
+  padding: 0.4rem 1.7rem;
   position: absolute;
-  z-index: 2;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 15px;
 }
 .rest-card__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 .rest-card__bottom h3 {
   margin: 0 0 0.2rem;
@@ -258,21 +239,18 @@ style attribute {
   position: relative;
 }
 .rest-card__heart-section:hover .rest-card__inner-heart {
-  transform: scale(1);
-  transition: all 0.5s cubic-bezier(0, 3, 1, 0.76);
+  opacity: 1;
+  transition: all 3s ease-in-out;
 }
 .rest-card__outer-heart {
+  position: absolute;
   font-size: 1.5rem;
 }
 .rest-card__inner-heart {
-  background: #9356DC;
-  background-clip: text;
-  color: transparent;
-  position: absolute;
+  color: #9356DC;
+  color: linear-gradient(#9356DC, #FF79DA);
   font-size: 1.5rem;
-  right: 0;
-  transform: scale(0);
-  transition: all 0s;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
