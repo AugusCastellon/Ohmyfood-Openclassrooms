@@ -113,12 +113,12 @@
     background-color:$background-lightgrey;
     box-sizing: border-box;
 
-    &__layout {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
+    // &__layout {
+    //     width: 45%;
+    //     display: flex;
+    //     flex-flow: column wrap;
+    //     justify-content: space-between;
+    // }
 }
 
 .rest-card {

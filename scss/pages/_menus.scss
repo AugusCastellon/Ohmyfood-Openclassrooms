@@ -1,0 +1,164 @@
+.rest-main {
+    background-color: $background-lightgrey;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.rest-img {
+    aspect-ratio: 16/10;
+    position: relative;
+    // overflow: hidden;
+    img {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        // overflow: hidden;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+    }
+}
+.menu {
+    padding: 2rem 1.5rem;
+    position: relative;
+    background-color: inherit;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-family: $titles-font, cursive;
+            font-weight: normal;
+        }
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+// SAME CODE THAT WE USE AT INDEX EXCEPT FOR THE .MENU (HOVER 38 TO 68)
+    &__heart-section {
+        position: relative;
+
+        &:hover .menu__inner-heart {
+            opacity: 1;
+            transition: all 3s ease-in-out;
+            // color: $primary-color;
+        }
+        // &:active .rest-card__outer-heart {
+        //     opacity: 1;
+        //     color: $primary-color;
+        // }
+    }
+
+    &__outer-heart {
+        position: absolute;
+        font-size: 1.5rem;
+        
+    }
+
+    &__inner-heart {
+        color: $primary-color;
+        color: $heart-gradient;
+        // background-clip: text;
+        // color: transparent;
+        font-size: 1.5rem;
+        opacity: 0;
+        
+    }
+}
+
+.menu-part {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2rem 0;
+
+    &__title {
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 1.5rem;
+
+        &::after {
+            content: '';
+            border-top: 3px solid $tertiary-color;
+            width: 3rem;
+            position: absolute;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            margin-bottom: 0.3rem;
+        }
+    }
+}
+
+.menu-item {
+    background-color: white;
+    height: 3.2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: black;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &__txt {
+        padding: 0.5rem;
+        flex: 1;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+        align-self: flex-end;
+        margin: 0 1rem .5rem auto;
+    }
+
+    &__checked {
+        background-color: $tertiary-color;
+        width: 2rem;
+        padding: 1rem;
+        margin-right: -4rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .fa-check {
+        background-color: white;
+        color: $tertiary-color;
+        padding: 4px;
+        border-radius: 50%;
+        transform: translateX(4rem) rotate(-720deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover .menu-item__checked {
+        margin-right: 0;
+    }
+
+    &:hover .fa-check {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    &:hover .menu-item__price {
+        transform: translateX(0);
+    }
+}
+
+// SAME CODE THAT WE USE AT INDEX 
+.order-btn {
+    border-radius: 4rem;
+    padding: 6rem 5rem;
+    display: flex;
+}
