@@ -404,11 +404,11 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
-  right: -45px;
+  right: -35px;
   top: 0;
   background-color: #99E2D0;
   position: absolute;
-  width: 45px;
+  width: 35px;
   transition: all 0.5s ease-in-out;
 }
 .menu-item .fa-check {
@@ -432,7 +432,7 @@ header {
   margin-right: 65px;
 }
 .menu-item:hover .menu-item__price {
-  margin-right: 55px;
+  margin-right: 45px;
 }
 
 .order-btn {

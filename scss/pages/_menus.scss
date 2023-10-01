@@ -151,11 +151,11 @@
         justify-content: center;
         align-items: center;
         display: flex;
-        right: -45px;
+        right: -35px;
         top: 0;
         background-color: $tertiary-color;
         position:absolute;
-        width: 45px;
+        width: 35px;
         // margin-right: -4rem;
         transition: all 0.5s ease-in-out;
     }
@@ -182,7 +182,7 @@
         margin-right: 65px;
     }
     &:hover &__price{
-        margin-right: 55px;
+        margin-right: 45px;
     }
 }
 
