@@ -21,3 +21,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+@media (max-width: 2100px) {
+    
+    body {
+    margin: 0 auto;
+    max-width: 500px;
+}
+}
