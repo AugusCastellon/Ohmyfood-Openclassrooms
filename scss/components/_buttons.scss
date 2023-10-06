@@ -1,16 +1,42 @@
 .btn {
     border: none;
     border-radius: 4rem;
+    display: block;
     color: white;
     cursor: pointer;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0.8rem 1rem;
-    background: linear-gradient(175deg,$secondary-color,$primary-color);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    // background: linear-gradient(175deg,$secondary-color,$primary-color);
+    background-image:linear-gradient(to right, $primary-color 0%,$secondary-color  100%);
+    box-shadow: 0 5px 10px 0 $box-shadow-elements-lightgrey;
+    transition: 0.5s;
+    background-size:200% auto;
 
     &:hover {
-        background: linear-gradient(175deg,$secondary-color 30%,$primary-color);
+        // background: linear-gradient(175deg,$secondary-color 30%,$primary-color);
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        background-position: right center;
     }
 }
+
+.order {
+    // width: 30vw;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    // display:flex;
+    // align-items: center;
+    // justify-content: center;
+    // box-sizing: border-box;
+    // background-color: $background-lightgrey;
+    // text-align: center;
+}
+
+// .explore {
+//     width: 30vw;
+//     padding: 1rem;
+//     box-sizing: border-box;
+//     background-color: $background-lightgrey;
+//     text-align: center;
+// }

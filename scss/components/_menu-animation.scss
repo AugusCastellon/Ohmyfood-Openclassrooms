@@ -1,3 +1,7 @@
+.menu-item{
+    animation: 1.2s ease-in-out 2s both slide-in;
+}
+
 @keyframes slide-in {
     from {
         opacity: 0;
@@ -10,10 +14,22 @@
     }
 }
 
-// Starting loop at 2 as first div in the parent is the title of the menu part, and does not contain the 'menu-item' class 
+@for $i from 1 through 3 {
+    
+    .menu-part:nth-of-type(#{$i}) {
+        @for $s from 2 through 4 {
+            $delay:0.2;
+            @if $i == 2 { 
+                $delay:3;
+            }
+            @if $i == 3 { 
+                $delay:6;
+            }
+            .menu-item:nth-of-type(#{$s}){
+                animation-delay: #{$s + $delay}s;
+                // border:1px solid red;
+            }
+        }
+        }
 
-@for $i from 2 through 5 {
-    .menu-item:nth-of-type(#{$i}) {
-        animation: 1.2s ease-in-out #{$i * 0.2}s both slide-in;
-    }
 }
