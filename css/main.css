@@ -22,7 +22,7 @@ a {
   color: inherit;
 }
 
-@media (max-width: 2100px) {
+@media (max-width: 3840px) {
   body {
     margin: 0 auto;
     max-width: 500px;
@@ -125,7 +125,7 @@ footer {
 
 .footer-layout {
   padding: 1.5rem 1.5rem;
-  max-width: 2400px;
+  max-width: 3840px;
   margin: auto;
 }
 .footer-layout p {
@@ -270,6 +270,9 @@ header {
   background-color: rgb(248, 248, 248);
   box-sizing: border-box;
 }
+.rest-section h2 {
+  padding-bottom: 1rem;
+}
 
 .rest-card {
   background-color: white;
@@ -299,6 +302,9 @@ header {
   position: absolute;
   right: 15px;
   top: 15px;
+}
+.rest-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .rest-card__bottom {
   display: flex;

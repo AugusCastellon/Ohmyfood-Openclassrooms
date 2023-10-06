@@ -113,6 +113,9 @@
     background-color:$background-lightgrey;
     box-sizing: border-box;
 
+    h2{
+        padding-bottom: 1rem;
+    }
     // &__layout {
     //     width: 45%;
     //     display: flex;
@@ -140,8 +143,14 @@
             object-fit: cover;
             display: block;
             object-position: center;
-            // transition-duration: 0ms;
-            // transform: translate3d(0px, 0px, 0px);
+            
+            // &:hover{
+            //     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            // // // overflow-clip-margin: content-box;
+            // // overflow: clip;
+            // // transition-duration: 10ms;
+            // // transform: translate3d(0px, 20px, 0px);
+            // }
         }
 
         &__new {
@@ -157,8 +166,10 @@
             top: 15px;
             // transition: all 3s ease-in-out;
         }
-
-
+    }
+            
+    &:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
     &__bottom {
