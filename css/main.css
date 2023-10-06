@@ -125,14 +125,17 @@ footer {
 
 .footer-layout {
   padding: 1.5rem 1.5rem;
-  max-width: 1500px;
+  max-width: 2400px;
   margin: auto;
 }
 .footer-layout p {
   font-family: Shrikhand, cursive;
   font-size: 1.2rem;
   margin: 0;
-  padding-bottom: 1rem;
+  padding: 1rem;
+}
+.footer-layout i {
+  padding-right: 1rem;
 }
 
 header {
