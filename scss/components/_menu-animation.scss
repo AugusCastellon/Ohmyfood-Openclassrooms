@@ -1,35 +1,65 @@
-.menu-item{
-    animation: 1.2s ease-in-out 2s both slide-in;
-}
+// .menu-item{
+//     animation: 1.2s ease-in-out 2s both slide-in;
+// }
 
-@keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
+// @keyframes slide-in {
+//     from {
+//         opacity: 0;
+//         transform: translateY(3rem);
+//     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+//     to {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
 
-@for $i from 1 through 3 {
+// @for $i from 1 through 3 {
     
-    .menu-part:nth-of-type(#{$i}) {
-        @for $s from 2 through 4 {
-            $delay:0.2;
-            @if $i == 2 { 
-                $delay:3;
-            }
-            @if $i == 3 { 
-                $delay:6;
-            }
-            .menu-item:nth-of-type(#{$s}){
-                animation-delay: #{$s + $delay}s;
-                // border:1px solid red;
-            }
-        }
-        }
+//     .menu-part:nth-of-type(#{$i}) {
+//         @for $s from 2 through 4 {
+//             $delay:0.2;
+//             @if $i == 2 { 
+//                 $delay:3;
+//             }
+//             @if $i == 3 { 
+//                 $delay:6;
+//             }
+//             .menu-item:nth-of-type(#{$s}){
+//                 animation-delay: #{$s + $delay}s;
+//                 // border:1px solid red;
+//             }
+//         }
+//         }
+// }
 
+
+  //use a list so that we can set animation delay to what we want
+  // 1 1 0s = 1 nth type for menu-part, 1 nth type for .menu-item, and finally 0s represents how long we delay the animation for
+$animation-list:
+    1 2 0s,
+    1 3 1s,
+    1 4 2s,
+    2 2 3s,
+    2 3 4s,
+    2 4 5s,
+    3 2 6s,
+    3 3 7s,
+    3 4 8s;
+
+@each $menu-part-nth, $menu-item-nth, $animation-delay in $animation-list {
+.menu-part:nth-of-type(#{$menu-part-nth}) .menu-item:nth-of-type(#{$menu-item-nth}) {
+    animation-delay: #{$animation-delay} 
+    }
+}
+
+@keyframes slide-up-fade-in {
+    0% {
+    opacity:0;
+    transform:  translate(0px,40px)  ;
+    }
+    100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+    }
 }

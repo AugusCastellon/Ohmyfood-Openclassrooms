@@ -2,10 +2,13 @@
     background-color: $background-lightgrey;
     border-radius: 2rem;
     overflow: hidden;
+    position: relative;
+    margin-top: -14px;
 }
 .rest-img {
     aspect-ratio: 16/10;
     position: relative;
+
     // overflow: hidden;
     img {
         width: 100%;
@@ -100,6 +103,9 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    animation: slide-up-fade-in ease 3s;
+    opacity: 0;
+    animation-fill-mode:forwards; 
 
     &__txt {
         padding: 0.5rem;
