@@ -129,15 +129,49 @@ a {
 }
 
 .menu-part:nth-of-type(3) .menu-item:nth-of-type(2) {
-  animation-delay: 6s;
-}
-
-.menu-part:nth-of-type(3) .menu-item:nth-of-type(3) {
   animation-delay: 7s;
 }
 
-.menu-part:nth-of-type(3) .menu-item:nth-of-type(4) {
+.menu-part:nth-of-type(3) .menu-item:nth-of-type(3) {
   animation-delay: 8s;
+}
+
+.menu-part:nth-of-type(3) .menu-item:nth-of-type(4) {
+  animation-delay: 9s;
+}
+
+.menu_4 .menu-part:nth-of-type(1) .menu-item:nth-of-type(2) {
+  animation-delay: 0s;
+}
+.menu_4 .menu-part:nth-of-type(1) .menu-item:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.menu_4 .menu-part:nth-of-type(1) .menu-item:nth-of-type(4) {
+  animation-delay: 2s;
+}
+.menu_4 .menu-part:nth-of-type(1) .menu-item:nth-of-type(5) {
+  animation-delay: 3s;
+}
+.menu_4 .menu-part:nth-of-type(2) .menu-item:nth-of-type(2) {
+  animation-delay: 4s;
+}
+.menu_4 .menu-part:nth-of-type(2) .menu-item:nth-of-type(3) {
+  animation-delay: 5s;
+}
+.menu_4 .menu-part:nth-of-type(2) .menu-item:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.menu_4 .menu-part:nth-of-type(2) .menu-item:nth-of-type(5) {
+  animation-delay: 7s;
+}
+.menu_4 .menu-part:nth-of-type(3) .menu-item:nth-of-type(2) {
+  animation-delay: 8s;
+}
+.menu_4 .menu-part:nth-of-type(3) .menu-item:nth-of-type(3) {
+  animation-delay: 9s;
+}
+.menu_4 .menu-part:nth-of-type(3) .menu-item:nth-of-type(4) {
+  animation-delay: 10s;
 }
 
 @keyframes slide-up-fade-in {
@@ -192,6 +226,7 @@ header {
 
 .background-img {
   background: url("./../images/restaurants/grey.png") no-repeat fixed center;
+  background-size: cover;
 }
 
 .screen-sizes {
@@ -370,6 +405,7 @@ header {
 }
 .rest-card__heart-section {
   position: relative;
+  cursor: pointer;
 }
 .rest-card__heart-section:hover .rest-card__inner-heart {
   opacity: 1;
@@ -389,6 +425,7 @@ header {
 
 .background-img {
   background: url("./../images/restaurants/grey.png") no-repeat fixed center;
+  background-size: cover;
 }
 
 .rest-main {
@@ -425,6 +462,7 @@ header {
 }
 .menu__title i {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .menu__heart-section {
   position: relative;

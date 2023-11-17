@@ -1,5 +1,6 @@
 .background-img{
     background:url('./../images/restaurants/grey.png') no-repeat fixed center;
+    background-size: cover;
 }
 
 .rest-main {
@@ -40,6 +41,7 @@
 
         i {
             font-size: 1.5rem;
+            cursor: pointer;
         }
     }
 // SAME CODE THAT WE USE AT INDEX EXCEPT FOR THE .MENU (HOVER 38 TO 68)
@@ -49,6 +51,7 @@
         &:hover .menu__inner-heart {
             opacity: 1;
             transition: all 3s ease-in-out;
+            
             // color: $primary-color;
         }
         // &:active .rest-card__outer-heart {

@@ -1,0 +1,8 @@
+@mixin list-animation($animation-list) {
+
+@each $menu-part-nth, $menu-item-nth, $animation-delay in $animation-list {
+    .menu-part:nth-of-type(#{$menu-part-nth}) .menu-item:nth-of-type(#{$menu-item-nth}) {
+        animation-delay: #{$animation-delay} 
+        }
+    }
+}

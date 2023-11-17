@@ -1,5 +1,6 @@
 .background-img{
     background:url('./../images/restaurants/grey.png') no-repeat fixed center;
+    background-size: cover;
 }
 
 .screen-sizes{
@@ -209,6 +210,7 @@
 
     &__heart-section {
         position: relative;
+        cursor: pointer;
 
         &:hover .rest-card__inner-heart {
             opacity: 1;
